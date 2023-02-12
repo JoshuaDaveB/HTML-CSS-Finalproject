@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-purple: #7134ab;
+    --color-light-blue: #69bafc;
+    --color-white: #fff;
+    --color-dark: #3d4152;
+    --color-darker: #2a2d3a;
+    --color_background: #f6f6f9;
+    --color-light: rbga(132, 139, 200, 0.18);
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins;
+    font-size: 0.85rem;
+    background-color: var(--color_background);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    padding-left: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+.profile-photo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+p{
+    color: var(--color-darker);
+}
+
+.purple{
+    color: var(--color-purple);
+}
+
+.light-blue{
+    color: var(--color-light-blue);
+}
+
+/*this is the start*/
+/*.nav-bar{
+    background: var(--color-purple);
+    height: 40px;
+
+}*/
+.left-bar{
+    height: 100vh;
+}
+
+.logo{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.columban-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.close{
+    margin-top: 0.3rem;
+    display: inline;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.top h2{
+    margin-top: 0.2rem;
+    font-size: 25px;
+    color: rgb(140, 17, 140);
+}
+
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+.left-bar h3{
+    font-weight: 500;
+}
+
+.sidebar-links a{
+    display: flex;
+    padding-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+.sidebar-links a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+.sidebar-links a:active{
+    background: #a8d3f3;
+    color: var(--color-purple);
+    margin-left: 0;
+}
+
+.sidebar-links a:active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: purple;
+}
+
+.sidebar-links a:active span{
+    color: var(--color-purple);
+    margin-left: calc(1rem - 3px);
+}
+
+.sidebar-links a:hover{
+    color: var(--color-purple);
+    background: rgba(61, 43, 226, 0.198);
+}
+
+.sidebar-links a:hover span{
+    margin-left: 1rem;
+    transition: all 400ms ease;
+}
+
+/*this is the main*/
+main{
+    margin-top: 1.4rem;
+}
+
+main .prof{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100px;
+    float: left;
+    margin-right: 25px;
+}
+
+main .info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+main .info > div{
+    background: var(--color-white);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 2rem 3rem #ccd8d8;
+    transition: all 300ms ease;
+}
+
+main .info > div:hover{
+    box-shadow: none;
+}
+
+/*this is the main part2*/
+main .task{
+    margin-top: 2rem;
+}
+
+main .task h2{
+    margin-bottom: 0.8rem;
+}
+
+main .task table{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 2rem 3rem #ccd8d8;
+    transition: 300ms ease;
+}
+
+main .task table:hover{
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 2.3rem;
+    border-bottom: 1px solid #ddecec;
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+/*this is the end of main*/
